@@ -5,7 +5,7 @@
      hosts: your_server
      gather_facts: false
    - name: Clone GitHub repository
-        git:
+     ansible.builtin.git:
         repo: "https://github.com/vamsimeduri/ansible.git"
         dest: "/tmp"
         version: master
