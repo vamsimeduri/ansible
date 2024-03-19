@@ -4,11 +4,8 @@
    - name: Copy jar file from GitHub to server
      hosts: your_server
      gather_facts: false
-     vars:
-     github_repo_url: "https://github.com/vamsimeduri/ansible.git"
-     tasks:
-      - name: Clone GitHub repository
+   - name: Clone GitHub repository
         git:
-         repo: "{{ github_repo_url }}"
-         dest: "/tmp/"
-         version: master
+        repo: "https://github.com/vamsimeduri/ansible.git"
+        dest: "/tmp"
+        version: master
