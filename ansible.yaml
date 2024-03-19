@@ -4,5 +4,5 @@
    - name: Clone GitHub repository
      ansible.builtin.git:
         repo: "https://github.com/vamsimeduri/ansible.git"
-        dest: "/tmp"
+        dest: "/tmp/ansible"
         version: master
