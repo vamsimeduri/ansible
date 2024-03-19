@@ -1,0 +1,14 @@
+- name: Intro to Ansible Playbooks
+  hosts: 3.87.168.252
+  tasks:
+   - name: Copy jar file from GitHub to server
+     hosts: your_server
+     gather_facts: false
+     vars:
+     github_repo_url: "https://github.com/vamsimeduri/ansible.git"
+     tasks:
+      - name: Clone GitHub repository
+        git:
+         repo: "{{ github_repo_url }}"
+         dest: "/tmp/your_github_repo"
+         version: master
