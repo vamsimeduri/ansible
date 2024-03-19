@@ -10,5 +10,5 @@
       - name: Clone GitHub repository
         git:
          repo: "{{ github_repo_url }}"
-         dest: "/tmp/your_github_repo"
+         dest: "/tmp/"
          version: master
