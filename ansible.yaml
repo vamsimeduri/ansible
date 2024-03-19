@@ -1,5 +1,6 @@
 - name: Intro to Ansible Playbooks
   hosts: 3.87.168.252
+  gather_facts: no
   tasks:
    - name: Clone GitHub repository
      ansible.builtin.git:
