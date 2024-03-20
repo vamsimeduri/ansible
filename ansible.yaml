@@ -1,5 +1,5 @@
 - name: Intro to Ansible Playbooks
-  hosts: 3.87.168.252
+  hosts: 34.235.149.27
   gather_facts: no
   tasks:
    - name: Clone GitHub repository
